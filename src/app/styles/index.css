@@ -1,0 +1,21 @@
+/* Error: Missing argument $amount.
+ *   ,--> index.scss
+ * 2 |   align-self: darken(1);
+ *   |               ^^^^^^^^^ invocation
+ *   '
+ *   ,--> sass:color
+ * 1 | @function darken($color, $amount) {
+ *   |           ======================= declaration
+ *   '
+ *   index.scss 2:15  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Missing argument $amount.\a   \250c \2500 \2500 > index.scss\a 2 \2502    align-self: darken(1);\a   \2502                ^^^^^^^^^ invocation\a   \2575 \a   \250c \2500 \2500 > sass:color\a 1 \2502  @function darken($color, $amount) {\a   \2502            \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a   \2575 \a   index.scss 2:15  root stylesheet";
+}

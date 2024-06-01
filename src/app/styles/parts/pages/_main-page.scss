@@ -1,0 +1,22 @@
+.main-page{
+  display: block;
+
+  h1{
+    @include centered;
+  }
+
+  &__image-container{
+    @include margin-y(12px, 12px);
+    @include centered;
+  }
+
+  &__form{
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 34.38rem;
+  }
+
+  &__title{
+    margin-bottom: 25px;
+  }
+}

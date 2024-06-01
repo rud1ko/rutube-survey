@@ -1,0 +1,11 @@
+.layout {
+  background: var(--black);
+}
+.layout__wrapper {
+  padding: 0 8rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/*# sourceMappingURL=layout.css.map */

@@ -1,21 +1,148 @@
-/* Error: Missing argument $amount.
- *   ,--> index.scss
- * 2 |   align-self: darken(1);
- *   |               ^^^^^^^^^ invocation
- *   '
- *   ,--> sass:color
- * 1 | @function darken($color, $amount) {
- *   |           ======================= declaration
- *   '
- *   index.scss 2:15  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Missing argument $amount.\a   \250c \2500 \2500 > index.scss\a 2 \2502    align-self: darken(1);\a   \2502                ^^^^^^^^^ invocation\a   \2575 \a   \250c \2500 \2500 > sass:color\a 1 \2502  @function darken($color, $amount) {\a   \2502            \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a   \2575 \a   index.scss 2:15  root stylesheet";
+:root {
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Inter", sans-serif;
 }
+
+:root {
+  --black: #020b14;
+  --white: #fff;
+  --blue: #1f73f9;
+  --gray: #bfc9d4;
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  overflow-x: hidden;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+body,
+html,
+#root {
+  height: 100%;
+}
+
+._container {
+  max-width: 1230px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 400;
+}
+
+input,
+button {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-page {
+  display: block;
+}
+.main-page h1 {
+  display: grid;
+  place-items: center;
+}
+.main-page__image-container {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  display: grid;
+  place-items: center;
+}
+.main-page__form {
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 34.38rem;
+}
+.main-page__title {
+  margin-bottom: 25px;
+}
+
+.divider {
+  padding: 9px 0;
+}
+.divider__body {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, #0699db 0%, #2d5e87 25%, #2e2a3f 50%, #341926 75%, #150c15 100%);
+}
+
+.grade {
+  display: block;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--blue);
+  border-radius: 1.25rem;
+  user-select: none;
+}
+
+.htag {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 1.88rem;
+  line-height: 117%;
+  text-align: center;
+  color: var(--white);
+}
+
+.ptag {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 1.06rem;
+  line-height: 129%;
+  text-align: center;
+  color: var(--white);
+}
+
+/*# sourceMappingURL=index.css.map */

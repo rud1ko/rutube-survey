@@ -1,3 +1,15 @@
-.ass{
-  align-self: darken(1);
-}
+//Base
+@import "parts/base/breakpoints",
+"parts/base/fonts",
+"parts/base/variables",
+"parts/base/globals",
+"parts/base/mixins";
+
+// Pages
+@import "parts/pages/main-page";
+
+//Components
+@import "parts/components/divider",
+        "parts/components/grade",
+        "parts/components/htag",
+        "parts/components/ptag";

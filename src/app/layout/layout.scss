@@ -1,0 +1,10 @@
+.layout{
+  background: var(--black);
+
+  &__wrapper{
+    padding: 0 8rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+}

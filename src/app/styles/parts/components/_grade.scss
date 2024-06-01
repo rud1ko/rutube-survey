@@ -1,0 +1,8 @@
+.grade{
+  display: block;
+  @include dimension(40px, 40px);
+  @include centered;
+  border: 1px solid var(--blue);
+  border-radius: 1.25rem;
+  user-select: none;
+}

@@ -1,1 +1,1 @@
-export {FeedbackPage} from './ui/FeedbackPage.tsx'
+export {FeedbackPage} from './FeedbackPage.tsx'

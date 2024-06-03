@@ -1,8 +1,25 @@
 .htag{
   font-family: var(--font-family);
-  font-weight: 700;
-  font-size: 1.88rem;
-  line-height: 117%;
-  text-align: center;
-  color: var(--white);
+
+  &__large{
+    font-weight: 700;
+    font-size: 1.88rem;
+    line-height: 117%;
+    color: var(--white);
+    @include devices($md){
+      font-size: 1.38rem;
+      line-height: 159%;
+    }
+  }
+
+  &__small{
+    font-weight: 400;
+    font-size: 1.06rem;
+    line-height: 129%;
+    color: var(--gray);
+  }
+
+  &__centered{
+    text-align: center;
+  }
 }

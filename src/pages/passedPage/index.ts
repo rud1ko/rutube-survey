@@ -1,0 +1,1 @@
+export {PassedPage} from './PassedPage.tsx'

@@ -1,7 +1,6 @@
-import './layout.scss'
-import {Header} from "../../widgets/header";
+import {Header} from "widgets/header";
 import {Outlet} from "react-router-dom";
-import {Divider} from "../../shared/ui/divider";
+import {Divider} from "shared/ui/divider";
 
 export const Layout = () => {
     return (

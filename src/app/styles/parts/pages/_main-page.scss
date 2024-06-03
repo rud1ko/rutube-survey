@@ -1,5 +1,6 @@
 .main-page{
   display: block;
+  @include centered;
 
   h1{
     @include centered;
@@ -8,15 +9,55 @@
   &__image-container{
     @include margin-y(12px, 12px);
     @include centered;
+
+    svg{
+      width: 100%;
+      height: auto;
+    }
   }
 
   &__form{
-    margin: 0 auto;
     padding: 10px;
     max-width: 34.38rem;
+    @include devices($md){
+      max-width: 100%;
+      padding: 16px;
+    }
   }
 
   &__title{
     margin-bottom: 25px;
+    @include devices($md){
+      margin-bottom: 14px;
+    }
+  }
+
+  &__rate{
+    margin-top: 28px;
+    display: grid;
+    grid-template-columns: repeat(10, auto);
+    justify-content: space-between;
+    @include devices($md){
+      grid-template-columns: repeat(5, auto);
+      justify-content: center;
+      grid-column-gap: 5.75px;
+      grid-row-gap: 10px;
+      margin-top: 14px;
+    }
+  }
+
+  &__br{
+    display: none;
+    @include devices($md){
+      display: block;
+    }
+  }
+
+  &__rate-orally{
+    margin-top: 8px;
+    @include flexbox(space-between);
+    @include devices($md){
+      padding: 0 32px;
+    }
   }
 }

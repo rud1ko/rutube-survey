@@ -6,10 +6,17 @@
 "parts/base/mixins";
 
 // Pages
-@import "parts/pages/main-page";
+@import "parts/pages/main-page",
+        "parts/pages/feedback-page",
+        "parts/pages/grantitude-page",
+        "parts/pages/passed-page";
 
-//Components
+// Components
 @import "parts/components/divider",
         "parts/components/grade",
         "parts/components/htag",
-        "parts/components/ptag";
+        "parts/components/ptag",
+        "parts/components/button",
+        "parts/components/question",
+        "parts/components/layout",
+        "parts/components/header";

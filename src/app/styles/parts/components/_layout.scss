@@ -1,0 +1,16 @@
+.layout{
+  background: var(--black);
+
+  &__wrapper{
+    padding: 0 113.5px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    @include devices($xl){
+      padding: 0;
+    }
+  }
+}

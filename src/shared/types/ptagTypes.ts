@@ -1,5 +1,8 @@
-import {ReactNode} from "react";
+import {DetailedHTMLProps, HTMLAttributes, ReactNode} from "react";
 
-export interface PtagTypes{
-    children: ReactNode
+export interface PtagTypes extends DetailedHTMLProps<HTMLAttributes<HTMLParagraphElement>, HTMLParagraphElement>{
+    children: ReactNode,
+    size: "middle" | "small" | "large",
+    color: "gray" | "white",
+    centered?: boolean
 }

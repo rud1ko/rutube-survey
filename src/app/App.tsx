@@ -1,10 +1,11 @@
 import {AppRouter} from "./routers/AppRouter.tsx";
-
-
+import {Providers} from "./providers";
 
 function App() {
   return (
-      <AppRouter/>
+      <Providers>
+        <AppRouter/>
+      </Providers>
   )
 }
 

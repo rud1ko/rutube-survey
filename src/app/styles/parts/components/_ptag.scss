@@ -3,6 +3,36 @@
   font-weight: 400;
   font-size: 1.06rem;
   line-height: 129%;
-  text-align: center;
-  color: var(--white);
+
+
+  &__centered{
+    text-align: center;
+  }
+
+  &__white{
+    color: var(--white);
+  }
+
+  &__gray{
+    color: var(--gray);
+  }
+
+  &__midSize{
+    font-size: 0.88rem;
+    line-height: 143%;
+  }
+
+  &__smallSize{
+    font-size: 0.75rem;
+    line-height: 167%;
+  }
+
+  &__largeSize{
+    font-size: 1.06rem;
+    line-height: 129%;
+    @include devices($md){
+      font-size: 0.75rem;
+      line-height: 167%;
+    }
+  }
 }

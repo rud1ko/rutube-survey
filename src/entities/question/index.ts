@@ -1,0 +1,1 @@
+export {default as questionsReducer, addAnswer} from './model/questionSlice.tsx'

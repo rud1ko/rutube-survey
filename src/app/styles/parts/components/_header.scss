@@ -1,0 +1,10 @@
+.header{
+  padding: 28px 0;
+  @include devices($xl){
+    padding: 20px;
+  }
+
+  &__logo{
+    height: 40px;
+  }
+}

@@ -1,0 +1,17 @@
+.question{
+
+  &__content{
+    margin-top: 8px;
+    display: flex;
+  }
+
+  &__choose{
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__rate{
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+}

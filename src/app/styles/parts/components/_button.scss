@@ -1,0 +1,30 @@
+.button{
+  @include dimension(200px, 40px);
+  @include bordered(1px, var(--blue));
+  @include padding-x(1rem, 1rem);
+  background: transparent;
+  color: var(--white);
+  border-radius: 1.25rem;
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 167%;
+
+  &__action{
+    @include dimension(222px, 44px);
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 0.88rem;
+    line-height: 143%;
+    text-align: center;
+    border: none;
+    background: var(--blue-tender);
+  }
+
+  &__active{
+    background: var(--blue) !important;
+    transition: 0.3s linear all;
+  }
+}

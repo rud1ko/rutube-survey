@@ -1,0 +1,26 @@
+.grantitude-page{
+  @include centered;
+
+  &__content{
+    @include centered;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  &__img{
+    @include margin-y(12px, 12px);
+
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__desc{
+    @include devices($md){
+      font-size: 1.06rem !important;
+      line-height: 129% !important;
+    }
+  }
+}

@@ -1,0 +1,1 @@
+export {default as passReducer, successfulPassage} from './model/passSlice.tsx'

@@ -1,0 +1,49 @@
+.feedback-page{
+  position: relative;
+  padding-bottom: 24px;
+  @include devices($xl){
+    padding-left: 16px;
+  };
+  @include devices($md_big_close){
+    padding: 0 16px 16px 16px;
+  };
+
+  &__title{
+    margin-top: 16px;
+  }
+
+  &__questions{
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  &__submit{
+    margin-top: 28px;
+    color: var(--white);
+    @include devices($xs_big){
+      width: 100% !important;
+    };
+  }
+
+  &__img{
+    position: absolute;
+    top: 133px;
+    right: 0;
+    @include devices($lg){
+      width: 430px;
+    };
+    @include devices($xl){
+      top: 100px;
+      width: 548px;
+    };
+    @include devices($md_big){
+      width: 430px;
+      top: 190px;
+    };
+    @include devices($md_big_close){
+      display: none;
+    };
+  }
+}

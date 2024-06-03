@@ -9,6 +9,6 @@
 
   &__active{
     background: var(--blue);
-    transition: 0.3s linear all;
+    @include transition(all, 0.3s, linear);
   }
 }

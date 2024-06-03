@@ -331,7 +331,7 @@ a {
 }
 .grade__active {
   background: var(--blue);
-  transition: 0.3s linear all;
+  transition: all 0.3s linear;
 }
 
 .htag {
@@ -416,7 +416,7 @@ a {
 }
 .button__active {
   background: var(--blue) !important;
-  transition: 0.3s linear all;
+  transition: all 0.3s linear;
 }
 
 .question__content {

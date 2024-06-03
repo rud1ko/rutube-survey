@@ -1,10 +1,8 @@
 import {FC} from "react";
-import {IQuestions} from "shared/types";
+import {QuestionType} from "shared/types";
 import {Ptag} from "shared/ui/Ptag";
 import {AddChooseAnswer} from "features/chooseQuestion";
 import {AddRateAnswers} from "features/rateQuestion";
-
-type QuestionType = IQuestions<"choose"> | IQuestions<"rate">;
 
 
 export const Question: FC<QuestionType> = ({id, text, type, content, isRequired, ...props}) => {

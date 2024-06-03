@@ -3,12 +3,7 @@ import {FC} from "react";
 import {useAppDispatch, useAppSelector} from "shared/lib/store/redux.ts";
 import {addAnswer} from "entities/question";
 import {IQuestionsJson} from "entities/question/model/questionSlice.tsx";
-
-interface AddChooseToAnswersProps{
-    text: string,
-    responseId: number,
-    questionId: number
-}
+import {AddChooseToAnswersProps} from "shared/types";
 
 export const AddChooseAnswer: FC<AddChooseToAnswersProps> = ({text, responseId, questionId}) => {
     const dispatch = useAppDispatch()

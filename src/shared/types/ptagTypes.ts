@@ -4,5 +4,4 @@ export interface PtagTypes extends DetailedHTMLProps<HTMLAttributes<HTMLParagrap
     children: ReactNode,
     size: "middle" | "small" | "large",
     color: "gray" | "white",
-    centered?: boolean
 }

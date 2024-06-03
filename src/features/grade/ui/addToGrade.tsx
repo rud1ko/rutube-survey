@@ -12,10 +12,8 @@ export const AddToGrade: FC<GradeTypes> = ({rate}) => {
     const [isActive, setActive] = useState(false);
     const addGradeToStore = () => {
         setActive(true)
-        setTimeout(() => {
-            dispatch(addGrade({rate: rate}))
-            navigate('/feedback')
-        }, 2000)
+        dispatch(addGrade({rate: rate}))
+        navigate('/feedback')
     }
 
     return (

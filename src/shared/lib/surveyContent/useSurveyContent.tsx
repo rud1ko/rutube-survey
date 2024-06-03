@@ -1,10 +1,5 @@
 import {useAppSelector} from "shared/lib/store/redux.ts";
-import {IQuestionsJson} from "entities/question/model/questionSlice.tsx";
-
-interface SurveyContent {
-    rate: number | null;
-    questions: IQuestionsJson[];
-}
+import {IQuestionsJson, SurveyContent} from "shared/types";
 
 export const useSurveyContent = () => {
     const grade = useAppSelector(state => state.grade)

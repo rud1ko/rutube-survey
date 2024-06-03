@@ -1,4 +1,4 @@
-import img from "shared/assets/passed.svg";
+import Img from "shared/assets/passed.svg?react";
 import {Htag} from "shared/ui/Htag";
 import {Ptag} from "shared/ui/Ptag";
 import {Button} from "shared/ui/Button";
@@ -7,7 +7,7 @@ export const PassedPage = () => {
     return (
         <div className="passed-page">
             <div className="passed-page__img">
-                <img src={img} alt={"Passed"}/>
+                <Img/>
             </div>
             <div className="passed-page__content">
                 <Htag size={"large"}>

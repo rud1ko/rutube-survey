@@ -27,7 +27,7 @@ export const FeedbackPage = () => {
 
     return (
         <div className={"feedback-page"}>
-            <img className="feedback-page__img" src={background} alt={"Background"}/>
+            <img className="feedback-page__img" src={background} alt={"Feedback-Background"} loading={"lazy"}/>
             <Htag size={"small"} className={"feedback-page__title"}>
                 Пожалуйста, ответьте на дополнительные вопросы.
             </Htag>

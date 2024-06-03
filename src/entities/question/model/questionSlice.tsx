@@ -1,9 +1,5 @@
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
-
-export interface IQuestionsJson {
-    questionID: number,
-    responseID: number
-}
+import {IQuestionsJson} from "shared/types";
 
 const initialState: IQuestionsJson[] = []
 

@@ -2,16 +2,24 @@
   @include centered;
 
   &__content{
+    padding-top: 10px;
     @include centered;
     display: flex;
     flex-direction: column;
     gap: 28px;
+    @include devices($md){
+      gap: 14px;
+    }
   }
 
   &__img{
     @include margin-y(12px, 12px);
-
-    img{
+    display: flex;
+    @include devices($md){
+      min-height: 188px;
+    }
+    svg{
+      flex: 1;
       width: 100%;
       height: auto;
     }

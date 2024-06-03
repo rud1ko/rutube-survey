@@ -1,1 +1,0 @@
-export {default as redirectReducer, addRedirect} from './model/redirectSlice.ts'

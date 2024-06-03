@@ -13,14 +13,12 @@ import {
 import {gradeReducer} from "entities/grade";
 import {questionsReducer} from "entities/question";
 import {passReducer} from "entities/pass";
-import {redirectReducer} from "entities/redirect";
 
 
 const rootReducer = combineReducers({
     grade: gradeReducer,
     questions: questionsReducer,
     pass: passReducer,
-    redirect: redirectReducer,
 })
 
 const persistConfig = {

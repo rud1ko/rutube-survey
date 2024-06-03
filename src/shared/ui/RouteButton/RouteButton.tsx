@@ -1,13 +1,7 @@
 import {Link} from "react-router-dom";
-import {ButtonHTMLAttributes, DetailedHTMLProps, FC} from "react";
+import {FC} from "react";
 import {Button} from "shared/ui/Button";
-
-interface RouteButtonProps extends DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>{
-    text: string,
-    href: string,
-    className: string,
-    disabled: boolean
-}
+import {RouteButtonProps} from "shared/types";
 
 export const RouteButton: FC<RouteButtonProps> = ({text, disabled, href, className, ...props}) => {
     const handle = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {

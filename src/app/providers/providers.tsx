@@ -1,11 +1,8 @@
-import {FC, JSX} from "react";
+import {FC} from "react";
 import store, {persistor} from "../store.ts";
 import {Provider} from "react-redux";
 import {PersistGate} from "redux-persist/integration/react";
-
-interface IProviders {
-    readonly children: JSX.Element
-}
+import {IProviders} from "shared/types";
 
 export const Providers: FC<IProviders> = ({ children }) => {
     return (

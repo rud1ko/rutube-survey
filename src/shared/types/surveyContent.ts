@@ -1,4 +1,4 @@
-import {IQuestionsJson} from "entities/question/model/questionSlice.tsx";
+import {IQuestionsJson} from "shared/types/iQuestionsJson.ts";
 
 export interface SurveyContent {
     rate: number | null;

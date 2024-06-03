@@ -1,12 +1,8 @@
 import MainImage from 'shared/assets/imageMain.svg?react'
 import {Htag} from "shared/ui/Htag";
 import {Ptag} from "shared/ui/Ptag";
-import {AddToGrade} from "features/grade/ui/addToGrade.tsx";
+import {AddToGrade} from "features/grade";
 import {MAIN_RATE} from "shared/consts";
-// import {useAppSelector} from "shared/lib/store/redux.ts";
-// import {useEffect} from "react";
-// import {useNavigate} from "react-router-dom";
-
 
 export const MainPage = () => {
     return (

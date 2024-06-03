@@ -2,8 +2,7 @@ import {FC} from "react";
 import {useAppDispatch, useAppSelector} from "shared/lib/store/redux.ts";
 import {addAnswer} from "entities/question";
 import {Grade} from "shared/ui/grade";
-import {IQuestionsJson} from "entities/question/model/questionSlice.tsx";
-import {AddRateToAnswersProps} from "shared/types";
+import {AddRateToAnswersProps, IQuestionsJson} from "shared/types";
 
 
 export const AddRateAnswers: FC<AddRateToAnswersProps> = ({rate, responseId, questionId}) => {
